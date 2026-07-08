@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A registered user in the system",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "description": "User's first name"
+        },
+        "lastName": {
+          "type": "string",
+          "description": "User's last name"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "User's Iranian phone number starting with 09"
+        },
+        "age": {
+          "type": "integer",
+          "description": "User's age between 1 and 120"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the user was created"
+        }
+      },
+      "required": ["firstName", "lastName", "phoneNumber", "age", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Collection of all registered users"
+    }
+  }
+}

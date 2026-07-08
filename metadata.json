@@ -1,0 +1,6 @@
+{
+  "name": "ثبت نام",
+  "description": "یک صفحه ثبت نام ساده و زیبا شامل نام، نام خانوادگی، شماره تماس و سن",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
