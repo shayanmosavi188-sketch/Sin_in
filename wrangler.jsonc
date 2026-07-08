@@ -6,5 +6,10 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "services": []
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "WORKER_SELF_REFERENCE"
+    }
+  ]
 }
