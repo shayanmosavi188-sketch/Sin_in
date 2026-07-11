@@ -1,15 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "registration-form",
-  "pages_build_output_dir": ".next",
+  "pages_build_output_dir": ".vercel/output/static",
   "compatibility_date": "2024-11-01",
   "compatibility_flags": [
     "nodejs_compat"
-  ],
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "WORKER_SELF_REFERENCE"
-    }
   ]
 }
