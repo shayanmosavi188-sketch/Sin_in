@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node -e \"if (process.env.IN_BUILD) { require('child_process').execSync('next build', {stdio: 'inherit'}); } else { process.env.IN_BUILD='true'; require('child_process').execSync('npx @cloudflare/next-on-pages && echo _worker.js > .vercel/output/static/.assetsignore', {stdio: 'inherit'}); }\"",
     "start": "next start",
     "lint": "eslint .",
     "clean": "next clean"
